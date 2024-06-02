@@ -1,17 +1,5 @@
-/**
- * Template Name: iPortfolio
- * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
- * Updated: Mar 17 2024 with Bootstrap v5.3.3
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
-
 (function () {
   'use strict';
-
-  /**
-   * Easy selector helper function
-   */
   const select = (el, all = false) => {
     el = el.trim();
     if (all) {
@@ -20,10 +8,6 @@
       return document.querySelector(el);
     }
   };
-
-  /**
-   * Easy event listener function
-   */
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all);
     if (selectEl) {
@@ -35,9 +19,6 @@
     }
   };
 
-  /**
-   * Easy on scroll event listener
-   */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener);
   };
